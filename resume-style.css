@@ -1,0 +1,33 @@
+body {
+  border: 20px solid black;
+}
+.grid-container{
+  border: 5px solid black;
+  display: grid;
+  grid-template-columns: ;
+}
+.picture {
+  border: 20px solid black;
+}
+.education {
+  display: grid;
+  border: 5px solid black;
+}
+.otherKnowledge {
+  border: 5px solid black;
+}
+.languages {
+  border: 5px solid black;
+}
+.contact {
+  border: 5px solid black;
+}
+.name {
+  border: 5px solid black;
+}
+.aboutMe {
+  border: 5px solid black;
+}
+.workExperience {
+  border: 5px solid black;
+}
