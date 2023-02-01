@@ -1,33 +1,97 @@
 body {
-  border: 20px solid black;
-}
-.grid-container{
-  border: 5px solid black;
   display: grid;
-  grid-template-columns: ;
+  font-family: 'Ubuntu', sans-serif;
+  color: #a829fc;
 }
-.picture {
-  border: 20px solid black;
-}
-.education {
+#top {
   display: grid;
-  border: 5px solid black;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+  to top,
+  white 0%,
+  white 60%,
+  #a829fc 25%,
+  #a829fc 75%
+  );
 }
-.otherKnowledge {
-  border: 5px solid black;
+img {
+  border: 5px solid whitesmoke;
+  border-radius: 50%;
 }
-.languages {
-  border: 5px solid black;
-}
-.contact {
-  border: 5px solid black;
+.image {
+  align-items: auto;
+  justify-content: auto;
 }
 .name {
-  border: 5px solid black;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+#bottom {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  border-bottom: 20px solid #a829fc;
+}
+.left {
+  grid-template-rows: 50% 50%;
+  background: linear-gradient(
+    to right,
+    white 0%,
+    white 98%,
+    #a829fc 98%,
+    #a829fc 100%
+  );
+}
+.contact {
+  size: 90%;
+  grid-row: 1/2;
+  text-align: end;
+  padding-right: 5%;
+  padding-bottom: 5%;
+}
+p {
+  font-size: 14px;
+}
+ul {
+  font-size: 14px;
+}
+.skills {
+  grid-row: 2/3;
+  text-align: right;
+  padding-right: 5%;
+  padding-bottom: 5%;
+}
+ul ul::after {
+  content: attr(data-icon);
+  font-size: 1.25em;
+}
+.right {
+  grid-template-rows: 40% 20% 40%;
+  background: linear-gradient(
+    to left,
+    #a829fc 0%,
+    #a829fc 18%,
+    white 18%,
+    white 100%
+  );
 }
 .aboutMe {
-  border: 5px solid black;
+  grid-row: 1/2;
+  grid-column: 2/3;
+  padding-left: 5%;
+  padding-right: 10%;
 }
-.workExperience {
-  border: 5px solid black;
+.education {
+  grid-row: 2/3;
+  grid-column: 2/3;
+  padding-left: 5%;
+}
+.experience {
+  grid-row: 3/4;
+  grid-column: 2/3;
+  padding-left: 5%;
+}
+#exp {
+  display: grid;
 }
